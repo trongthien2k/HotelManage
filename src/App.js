@@ -44,11 +44,11 @@ const App = () => {
       <Suspense fallback={loading}>
         <Routes>
           <Route
-            path="admin/login"
+            path="/admin/login"
             name="Login Page"
             element={<AdminLogin />}
           />
-          <Route element={<ProtectedRoutes redirect="admin/login" />}>
+          <Route element={<ProtectedRoutes redirect="/admin/login" />}>
             <Route path="/admin/*" element={<DefaultLayout />} />
           </Route>
 
