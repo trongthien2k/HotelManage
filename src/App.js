@@ -57,7 +57,6 @@ const App = () => {
             <Route exact path="/rooms" name="Page" element={<Rooms />} />
             <Route exact path="/bookings" name="Page" element={<Bookings />} />
 
-
             <Route
               path="/rooms/single-room"
               name="Page"
